@@ -1,0 +1,26 @@
+.about-us {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-us h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-us img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px; /* Optional: for rounded corners */
+  }
+  
