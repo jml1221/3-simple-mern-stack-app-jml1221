@@ -9,7 +9,7 @@ function AboutUs() {
   const [aboutInfo, setAboutInfo] = useState({ title: '', content: '', imageUrl: '' });
 
   useEffect(() => {
-    fetch('/api/about')
+    fetch('/about')
       .then(response => response.json())
       .then(data => setAboutInfo(data));
   }, []);
