@@ -7,21 +7,15 @@ import './AboutUs.css';
 
 
 
-function AboutUs() {
-    const [aboutInfo, setAboutInfo] = useState({ title: '', content: '', imageUrl: '' });
-  
-    useEffect(() => {
-      fetch('/api/about')
-        .then(response => response.json())
-        .then(data => setAboutInfo(data));
-    }, []);
-  
+const AboutUs = props => {
     return (
-      <div>
-        <h1>{aboutInfo.title}</h1>
-        <p>{aboutInfo.content}</p>
-        <img src={aboutInfo.imageUrl} alt="About Us" />
-      </div>
-    );
-  }
+      <>
+        <h1>About Us</h1>
+        <p>"I'm Jiamiao Li, a Computer Science major at New York University. My journey in technology has been driven by a strong passion for understanding the intricacies of software engineering and an eagerness to explore the vast potential of data analysis. Outside the classroom, I immerse myself in various projects that allow me to apply theoretical knowledge to practical challenges. This not only shape my academic focus but also inspire my aspirations for future innovations.",
+    imageUrl: "https://photos.app.goo.gl/bF183kwMdQ3i45AQ9"</p>
+        
+      </>
+    )
+    }
+    
 export default AboutUs;
