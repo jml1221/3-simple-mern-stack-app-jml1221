@@ -78,6 +78,13 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+app.get('/api/about', (req, res) => {
+  res.json({
+    title: "About Us",
+    content: "Here are a few paragraphs about myself...",
+    imageUrl: "URL_to_your_photo_here"
+  });
+});
 
 
 
